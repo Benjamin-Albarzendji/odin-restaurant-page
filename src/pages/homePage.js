@@ -17,31 +17,34 @@ export function homePage() {
     homeImage.src = "../src/images/homePage.png"
     imageContainer.appendChild(homeImage)
 
-    const absoluteText = document.createElement("div")
-    absoluteText.innerText = "The Bite"
-    imageContainer.appendChild(absoluteText)
-
     homePageContainer.appendChild(imageContainer)
 
 
     //Header & Subheader Text
-
     const headerContainer = document.createElement("div")
     headerContainer.className = "headerContainer"
 
     const header = document.createElement("div")
+    header.className = "header"
     header.innerText = "Welcome to the Bite"
 
-    const subheader = document.createElement("div")
-    subheader.innerText = "Discover your Tastes"
+
+    const subHeader = document.createElement("div")
+    subHeader.className = "subHeader"
+    subHeader.innerText = "Discover your Tastes!"
 
     headerContainer.appendChild(header)
-    headerContainer.appendChild(subheader)
-
+    headerContainer.appendChild(subHeader)
     homePageContainer.appendChild(headerContainer)
 
 
-    
+    //Menu Button
+    const menuButton=document.createElement("button")
+    menuButton.innerText = "Menu"
+    headerContainer.appendChild(menuButton)
+
+
+    //Appends the div for it to be shown in the DOM
     contentDiv.appendChild(homePageContainer)
 
 

@@ -23,7 +23,6 @@ body {
   border-radius: 5%;
 }
 
-
 .test {
   position: absolute;
   top: 10%;
@@ -35,7 +34,36 @@ body {
 
 .headerContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.headerContainer .header {
+  font-size: 3rem;
+}
+
+.headerContainer .subHeader {
+  font-size: 2rem;
+}
+
+.headerContainer button {
+  margin-top: 5%;
+  width: 10%;
+  height: 40px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  background-color: orangered;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.headerContainer button:hover {
+  background-color: rgba(255, 68, 0, 0.559);
+}
+
+.headerContainer button:active {
+  transform: scale(0.95);
 }
