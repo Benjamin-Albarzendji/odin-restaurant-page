@@ -1,0 +1,41 @@
+body {
+  margin-left: 5%;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#content {
+}
+
+.homePageContainer {
+  display: flex;
+}
+
+.imageContainer {
+  width: 80%;
+}
+.imageContainer img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+
+.test {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  color: white;
+  font-size: 3rem;
+  background-color: black;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
