@@ -5,7 +5,7 @@
 
 
 ### Description
-#### My first project upcoming the complexity considerably. This project uses webpack, NPM modules, and E6 modules where everything is generated in javaScript with close to no HTML elements in the index.html file. 
+#### A project where the complexity increased considerably. This project uses webpack, NPM modules, and E6 modules where everything is generated in javaScript with close to no HTML elements in the index.html file. 
 
 
 
