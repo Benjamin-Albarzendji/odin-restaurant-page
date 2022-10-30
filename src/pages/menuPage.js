@@ -13,7 +13,11 @@ menuObjects.push(taco);
 const pizza = menuItem("Volcanic Pizza", "Straight outta Pompei", "500$");
 menuObjects.push(pizza);
 
-const bigMac = menuItem("Home-Made Big Mac", "The Original Big Mac", "500$");
+const bigMac = menuItem(
+  "Home-Made Big Mac",
+  "Better Than The Original!",
+  "500$"
+);
 menuObjects.push(bigMac);
 
 const pasta = menuItem(
@@ -50,6 +54,13 @@ export function menuPage() {
   const menuPage = document.createElement("div");
   menuPageContainer.appendChild(menuPage);
   menuPage.className = "menuPage";
+
+  //menuHeader
+
+  const menuHeader = document.createElement("div");
+  menuHeader.innerText = "Menu";
+  menuHeader.className = "header";
+  menuPage.appendChild(menuHeader);
 
   //Loop through all the objects in the list
   menuObjects.forEach((item) => {
