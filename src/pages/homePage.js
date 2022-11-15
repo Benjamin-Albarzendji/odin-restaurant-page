@@ -1,3 +1,5 @@
+import { menuPage } from "./menuPage";
+
 export function homePage() {
   //Grabs the contentDiv in the document
   const contentDiv = document.querySelector("#content");
@@ -36,6 +38,10 @@ export function homePage() {
   const menuButton = document.createElement("button");
   menuButton.innerText = "Menu";
   headerContainer.appendChild(menuButton);
+  menuButton.addEventListener("click", () => {
+    menuButton.parentElement.parentElement.remove();
+    menuPage();
+  });
 
   //Appends the div for it to be shown in the DOM
   contentDiv.appendChild(homePageContainer);
